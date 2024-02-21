@@ -1,0 +1,217 @@
+
+.header1{
+    height: 200px;
+    width:1888px;
+    margin-right: 5px;
+    margin-left: 9px;
+    color: white;
+    border: solid #000000 1px;
+    font-size: x-large;
+    background: #fd65fd;
+    background-image: -webkit-linear-gradient(top, #fa52fa, #80c2f5);
+    background-image: -moz-linear-gradient(top, #fa52fa, #80c2f5);
+    background-image: -ms-linear-gradient(top, #fa52fa, #80c2f5);
+    background-image: -o-linear-gradient(top, #fa52fa, #80c2f5);
+    background-image: linear-gradient(to bottom, #fa52fa, #80c2f5);
+}
+.main{
+    margin-top: 1px;
+    margin-left: 9px;
+    color: #000000;
+    height: 580px;
+    background-color:#80c2f5;
+    padding-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    float:left;
+    width: 74%;
+    background-repeat: no-repeat;
+    border: solid #000000 1px;
+}
+
+.right{
+    overflow: auto;
+    white-space: nowrap;
+    float: right;
+    padding-top: 30px;
+    margin-right: 5px;
+    width:25%;
+    margin-top: 1px;
+    color: #000000;
+    height:580px;
+    background-color:#80c2f5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    border: solid #000000 1px;
+}    
+
+    
+button {
+    background: #fa52fa;
+    background-image: -webkit-linear-gradient(top, #fa52fa, #43a1e8);
+    background-image: -moz-linear-gradient(top, #fa52fa, #43a1e8);
+    background-image: -ms-linear-gradient(top, #fa52fa, #43a1e8);
+    background-image: -o-linear-gradient(top, #fa52fa, #43a1e8);
+    background-image: linear-gradient(to bottom, #fa52fa, #43a1e8);
+    -webkit-border-radius: 5;
+    -moz-border-radius: 5;
+    border-radius: 5px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 20px 10px 20px;
+    border: solid #000000 1px;
+    text-decoration: none;
+  }
+  
+  button:hover {
+    background: #cf43f2;
+    text-decoration: none;
+  }
+  table {
+    color:rgb(0, 0, 0);
+    margin-left: 7%;
+    margin-top: 3%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid black;
+    width: 70%;
+    font-family:'Geneva', sans-serif;
+    font-size: large;
+}
+            
+th {
+    border: solid #000000 1px;
+    background: #fa52fa;
+    background-image: -webkit-linear-gradient(top, #fa52fa, #43a1e8);
+    background-image: -moz-linear-gradient(top, #fa52fa, #43a1e8);
+    background-image: -ms-linear-gradient(top, #fa52fa, #43a1e8);
+    background-image: -o-linear-gradient(top, #fa52fa, #43a1e8);
+    background-image: linear-gradient(to bottom, #fa52fa, #43a1e8);
+    text-align: left;
+    padding: 16px;
+}
+td {
+    background-color: #fce2f9c0;
+    border: solid #000000 1px;
+    color:#000000;
+    text-align: left;
+    padding: 20px;
+}
+tr:nth-child(even) {
+    background-color: rgba(0, 109, 241, 0.578);
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+.bt {
+    font-size: small;
+    padding: 7px;
+}
+.black-mode {
+    margin-top: 1px;
+    margin-left: 9px;
+    width: 74%;
+    color: #000000;
+    height: 580px;
+    background-color:#000000;
+    padding-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    float:left;
+    background-repeat: no-repeat;
+    border: solid #000000 1px;
+}
+.black-mode1 {
+    height: 200px;
+    width:1888px;
+    margin-right: 5px;
+    margin-left: 9px;
+    color: white;
+    border: solid #000000 1px;
+    font-size: x-large;
+    background: #fd65fd;
+    background-image: -webkit-linear-gradient(top, #ada6ad, #040404);
+    background-image: -moz-linear-gradient(top, #ada6ad, #040404);
+    background-image: -ms-linear-gradient(top, #ada6ad, #040404);
+    background-image: -o-linear-gradient(top, #ada6ad, #040404);
+    background-image: linear-gradient(top, #ada6ad, #040404);
+}
+.black-mode2 {
+overflow: auto;
+white-space: nowrap;
+float: right;
+padding-top: 30px;
+margin-right: 5px;
+width:25%;
+margin-top: 1px;
+color: #000000;
+height:580px;
+background-color:#000000;
+font-family: Arial, Helvetica, sans-serif;
+font-size: large;
+border: solid #000000 1px;
+}
+
+#form { 
+    background: rgba(0, 0, 0, 0.15); 
+    padding: 0.20rem;
+    margin-top: 10px;
+    position: bottom;
+    display: flex;
+    height: 3rem; 
+    width: 25rem;
+    box-sizing: border-box; 
+    backdrop-filter: blur(10px); 
+}
+#input { 
+    overflow: auto;
+    border: none; 
+    padding: 0 1rem; 
+    flex-grow: 1; 
+    border-radius: 2rem; 
+    margin: 0.25rem; 
+}
+#input:focus { 
+    outline: none;
+}
+#form > button {
+    background: #333; 
+    border: none; 
+    padding: 0 1rem; 
+    margin: 0.25rem; 
+    border-radius: 3px; 
+    outline: none; 
+    color: #f6f6f6; 
+}
+
+#messages { 
+    color: #c068fe;
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+}
+#messages > li { 
+    padding: 0.5rem 1rem; 
+}
+#messages > li:nth-child(odd) { 
+    background: #ffffff; 
+}
+.chatbtn {
+        background: #fa52fa;
+        background-image: -webkit-linear-gradient(top, #fa52fa, #43a1e8);
+        background-image: -moz-linear-gradient(top, #fa52fa, #43a1e8);
+        background-image: -ms-linear-gradient(top, #fa52fa, #43a1e8);
+        background-image: -o-linear-gradient(top, #fa52fa, #43a1e8);
+        background-image: linear-gradient(to bottom, #fa52fa, #43a1e8);
+        -webkit-border-radius: 5;
+        -moz-border-radius: 5;
+        border-radius: 5px;
+        font-family: Arial;
+        color: #ffffff;
+        font-size: 18px;
+        padding: 10px 20px 10px 20px;
+        border: solid #000000 1px;
+        text-decoration: none;
+        }

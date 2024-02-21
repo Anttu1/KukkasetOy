@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Kukkaset Oy</title>
+    <link rel="stylesheet" href="tyyli.css">
+    <script src="koodi.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <center> 
+      <div class="header1" id="1">
+         <h1>KUKKASET OY</h1>          
+         <button onclick="Main()">Pääsivu</button>
+         <button onclick="Info()">Esittely</button>
+         <button onclick="fetchData()">Henkilökunta</button>
+         <button onclick="Contact()">Yhteystiedot</button><br>
+         <button onclick="blackTheme()" class="bt">Tumma teema</button>
+
+
+      </div>
+
+      <div class="main" id="2">
+          <p id="paasivu"></p>
+          <p id="esittely"></p>
+          <p id="henkilokunta"></p>
+          <p id="yhteystiedot"></p>
+      </div>
+      <div class="right" id="3">
+      <button onclick="Chat()" class="chatbtn">Aloita chat</button>
+      <form id="form" action="">
+        <input id="input" autocomplete="off" /><button>Send</button>
+      </form>
+      <ul id="messages"></ul>
+     </div>
+
+  </center>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      function Chat() {
+        // Kun käyttäjän sivu latautuu, häneltä kysytään nimi
+        // ja talletetaan user nimiseen muuttujaan.
+        var user = window.prompt("Anna nimesi")
+        const socket = io();
+        // Lähetetään tai "emitoidaan" 
+        // periaatteessa tavallinen chat viesti, ja tunniste on "chat message" mutta tässä
+        // kohtaa viestin sisältö on vasta että käyttäjä on liittynyt.
+        socket.emit('chat message', user + " liittyi keskusteluun.");
+
+        const form = document.getElementById('form');
+        const input = document.getElementById('input');
+        const messages = document.getElementById('messages');
+
+        form.addEventListener('submit', (e) => {
+        // Oletuksena formin submitointi päivittäisi selaimen. Nyt se estetään.
+          e.preventDefault();
+        if (input.value) {
+          // Kun formi on lähetetty emitoidaan palvelimelle viesti nimikkeellä "chat message"
+          // Nimike on emitissä 1. parametrina ja pilkun jälkeen 2. parametriksi muodostetaan viesti:
+            socket.emit('chat message', user + " kirjoitti: " + input.value);
+            input.value = '';
+            }
+        });
+
+        socket.on('chat message', (msg) => {
+        const item = document.createElement('li');
+        item.textContent = msg;
+        messages.appendChild(item);
+        window.scrollTo(0, document.body.scrollHeight);
+        }); }
+
+    </script>
+  </div>
+  </body>
+</html>
