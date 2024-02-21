@@ -3,7 +3,7 @@ async function fetchData() {
     var x = `<table><thead><th>Nimi</th><th>Sähköposti</th><th>Puhelinnumero</th></thead></tbody>`
     
     try {
-    const response = await fetch("http://localhost:3000/api/henkilokunta")
+    const response = await fetch("http://https://kukkasetoy.onrender.com/api/henkilokunta")
     const hkuntadata = await response.json() //muutetaan json => javascript muotoon
 
     await hkuntadata.map(h => { //loopataan läpi oliot map-funktiolla, h  on 1 henkilökunnan jäsen
