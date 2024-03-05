@@ -23,7 +23,7 @@ async function fetchData() {
     }
      }
     function Main() {
-        document.getElementById("paasivu").innerHTML = "<br><h2>Tervetuloa Voikukka OY:n sivuille! <br> Täältä löydät tietoa yrityksestämme ja henkilökunnastamme.</h2>"
+        document.getElementById("paasivu").innerHTML = "<br><h2>Tervetuloa Kukkaset OY:n sivuille! <br> Täältä löydät tietoa yrityksestämme ja henkilökunnastamme.</h2>"
         document.getElementById("paasivu").style.display ="block"
         document.getElementById("esittely").style.display ="none"
         document.getElementById("yhteystiedot").style.display ="none"
@@ -35,7 +35,7 @@ async function fetchData() {
      //       $("#2").empty();
      //       $("#2").append("<h2>Ota yhteyttä</h2><br><h4>Puhelinnumero:</h4> 0400786590 <br><h4> Sähköposti:</h4> voikukkaoy@voikukka.fi <br> <h4>Osoite:</h4> Keskustantie 24, <br> 53920 Lappeenranta")
      //       })
-        document.getElementById("yhteystiedot").innerHTML = "<h2>Ota yhteyttä</h2><br><h4>Puhelinnumero:</h4> 0400786590 <br><h4> Sähköposti:</h4> voikukkaoy@voikukka.fi <br> <h4>Osoite:</h4> Keskustantie 24, <br> 53920 Lappeenranta"
+        document.getElementById("yhteystiedot").innerHTML = "<h2>Ota yhteyttä</h2><br><h4>Puhelinnumero:</h4> 0400786590 <br><h4> Sähköposti:</h4> kukkasetoy@kukkaset.fi <br> <h4>Osoite:</h4> Keskustantie 24, <br> 53920 Lappeenranta"
         document.getElementById("yhteystiedot").style.display="block"
         document.getElementById("esittely").style.display ="none"
         document.getElementById("paasivu").style.display ="none"
